@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000000;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: right;
+  padding: 40px;
+  width: 70%;
+  background-color: #FFA500;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer{
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: #00FFFF;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+      <h2 style="background-color:#00FFFF">Intruduction.</h2>
+     <p style="font-family:Monaco;color:#FF5733;font-size:150%;">Male Cows and sometimes female cows too are used for carrying carts. In Harappan Civilization, A well equipped Bullock cart was used for transportation and farming. Still, in various villages of India, carts are used for farming.</p>
+        <p style="font-family:Didot;font-size:120%;">Cow Dung is also very useful. It is used as manure. In rural India, cow dung is used for household fuel, as insect repellents, etc.</p>
+
+<header>
+  <a href="chandpur"><img src="image/chandpur.jpg" alt="chandpur" style="width:320px;height:320px;"></a>
+
+  <h2 style="font-family:Monaco;color:#FFA500;">My home </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style="font-size:150%;background-color:#C9C0BB">Chandpur</li>
+      <li style="font-size:150%;"><a href="#">Faridgonj</a></li>
+      <li style="font-size:150%;background-color:#C0C0C0;color: black;">Gazipur</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="background-color:#7FFD4;">Chandpur</h1>
+    <p >চাঁদপুর জেলা বাংলাদেশের দক্ষিণ-পূর্বাঞ্চলের চট্টগ্রাম বিভাগের একটি প্রশাসনিক অঞ্চল। উপজেলার সংখ্যানুসারে চাঁদপুর বাংলাদেশের একটি “এ” শ্রেণিভুক্ত জেলা। পদ্মা, মেঘনা ও ডাকাতিয়া নদীর মিলনস্থলে এ জেলা অবস্থিত। ইলিশ মাছের অন্যতম প্রজনন অঞ্চল হিসেবে চাঁদপুরকে 'ইলিশের বাড়ি' নামে ডাকা হয়।</p>
+    
+
+
+  </article>
+</section>
+
+<footer>
+  <h1><p>আমি ভালোবাসি চাঁদপুর জেলা কে</p></h1>
+     <h2 > আমি ভালোবাসি আমার দেশকে</h2>
+</footer>
+
+</body>
+</html>
+

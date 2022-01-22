@@ -1,0 +1,24 @@
+*
+{
+	margin: 0;
+	padding:0 ;
+	box-sizing: border-box;
+}
+body
+{
+	background:#000 ;
+	overflow: hidden;
+	height: 100vh;
+}
+i
+{
+	position: absolute;
+	height: 200px;
+	background: linear-gradient(transparent, #fff);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+i:nth-child(3n+1)
+{
+	background: linear-gradient(transparent, #0fff);
+}
