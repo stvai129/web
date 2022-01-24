@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="image/boxoff.jpg" width="100" height="180">
+
+<p>লাইট এ টার্চ করলে লাইট জ্বলবে.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("boxon")) {
+    image.src = "image/boxoff.jpg";
+  } else {
+    image.src = "image/boxon.jpg";
+  }
+}
+</script>
+
+</body>
+</html>
